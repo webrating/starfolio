@@ -248,7 +248,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "public/example-website.webp",
+      image: "/example-website.webp",
       video: "",
     },
     {
@@ -308,7 +308,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "public/example-website.png",
+      image: "/example-website.png",
       video: "",
     },
     {
