@@ -20,12 +20,13 @@
 
 A developer portfolio template that doesn't make you hunt through twenty component files to change your name. Your entire portfolio - bio, work history, projects, skills, hackathons, social links - lives in a single typed data file. The components read from it. You never touch them.
 
-Inspired by [dillionverma/portfolio](https://github.com/dillionverma/portfolio), rebuilt on Astro for static-first performance, smaller bundles, and content collections.
+**TL;DR: Edit three config files, deploy in minutes**
 
 ## Features
 
 - **Astro v6** - static-first, ships zero JS by default
 - **Three-file customization** - edit your data, config, and posts; never touch components
+- **Homepage customization** - show/hide sections, control all of the homepage content, + lots more
 - **Tailwind CSS v4 + shadcn/ui** - modern, accessible UI primitives
 - **Light & dark mode** - automatic system detection, theme variables in one place
 - **MDX blog** - full MDX with components, syntax highlighting, code blocks
@@ -34,7 +35,6 @@ Inspired by [dillionverma/portfolio](https://github.com/dillionverma/portfolio),
 - **Variable fonts** - swap fonts in seconds via Fontsource
 - **Responsive design** - mobile-first, looks great everywhere
 - **Cloudflare Pages adapter** - pre-configured, swappable for Vercel / Netlify / Node
-- **Fast** - 100/100 Lighthouse on default install
 
 ## Three files, one portfolio
 
@@ -203,7 +203,7 @@ If this template saved you time, please **star the repo** - it helps others find
 
 ## Credits
 
-- [dillionverma/portfolio](https://github.com/dillionverma/portfolio) - the original Next.js portfolio this template is inspired by
+- [dillionverma/portfolio](https://github.com/dillionverma/portfolio) - the original, and AMAZING, Next.js portfolio this template is inspired by
 - [Astro](https://astro.build), [shadcn/ui](https://ui.shadcn.com), [Tailwind CSS](https://tailwindcss.com)
 
 ## License
