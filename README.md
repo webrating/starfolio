@@ -10,7 +10,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/webrating/starfolio)
 
-[**Live Demo**](https://websiterating.com/astro-portfolio-template/) · [Report Bug](https://github.com/webrating/starfolio/issues) · [Request Feature](https://github.com/webrating/starfolio/issues)
+[**Live Demo**](https://astro-portfolio-template.websiterating.com) · [Report Bug](https://github.com/webrating/starfolio/issues) · [Request Feature](https://github.com/webrating/starfolio/issues)
 
 ![Starfolio preview](./public/starfolio-preview.png)
 
