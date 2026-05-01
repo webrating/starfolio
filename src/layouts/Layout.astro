@@ -23,14 +23,19 @@ const pageTitle = title
   ? CONFIG.seo.titleTemplate.replace("%s", title).replace("%n", DATA.name)
   : DATA.name;
 const ogImage = image
-  ? image.startsWith("http") ? image : `${CONFIG.site.url}${image}`
+  ? image.startsWith("http")
+    ? image
+    : `${CONFIG.site.url}${image}`
   : `${CONFIG.site.url}${DATA.ogImage}`;
 
 const { light, dark, radius } = CONFIG.theme;
 const { baseFontSize } = CONFIG.typography;
 ---
 
-<html lang={CONFIG.site.locale.split("_")[0]} style={`font-size: ${baseFontSize}%;`}>
+<html
+  lang={CONFIG.site.locale.split("_")[0]}
+  style={`font-size: ${baseFontSize}%;`}
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,7 +46,11 @@ const { baseFontSize } = CONFIG.typography;
       (function () {
         try {
           var theme = localStorage.getItem("theme");
-          if (theme === "dark" || (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          if (
+            theme === "dark" ||
+            (!theme &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches)
+          ) {
             document.documentElement.classList.add("dark");
           } else {
             document.documentElement.classList.remove("dark");
@@ -51,7 +60,8 @@ const { baseFontSize } = CONFIG.typography;
     </script>
 
     <!-- Theme variables from config.ts -->
-    <style set:html={`
+    <style
+      set:html={`
       :root {
         --radius: ${radius};
         --background: ${light.background};
@@ -93,7 +103,8 @@ const { baseFontSize } = CONFIG.typography;
         --input: ${dark.input};
         --ring: ${dark.ring};
       }
-    `} />
+    `}
+    ></style>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -106,7 +117,10 @@ const { baseFontSize } = CONFIG.typography;
 
     <!-- Robots -->
     <meta name="robots" content={CONFIG.seo.robots} />
-    <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
+    <meta
+      name="googlebot"
+      content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+    />
 
     <!-- OpenGraph -->
     <meta property="og:type" content="website" />
@@ -124,7 +138,7 @@ const { baseFontSize } = CONFIG.typography;
     <meta name="twitter:image" content={ogImage} />
   </head>
   <body class="min-h-screen bg-background font-sans antialiased relative">
-    <!-- FlickeringGrid header background — matches template exactly -->
+    <!-- FlickeringGrid header background - matches template exactly -->
     <div class="absolute inset-0 top-0 left-0 right-0 h-25 overflow-hidden z-0">
       <FlickeringGrid
         client:load
@@ -138,7 +152,7 @@ const { baseFontSize } = CONFIG.typography;
       />
     </div>
 
-    <!-- Main content wrapper — matches template's z-10 container exactly -->
+    <!-- Main content wrapper - matches template's z-10 container exactly -->
     <div class="relative z-10 max-w-2xl mx-auto py-12 pb-24 sm:py-24 px-6">
       <slot />
     </div>

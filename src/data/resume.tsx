@@ -126,7 +126,7 @@ export const DATA = {
       start: "January 2023",
       end: undefined,
       description:
-        "Building a suite of developer productivity tools focused on local-first architecture and offline sync. Grew to 1,200 paying customers within the first year. Responsible for the full stack — product, engineering, and growth.",
+        "Building a suite of developer productivity tools focused on local-first architecture and offline sync. Grew to 1,200 paying customers within the first year. Responsible for the full stack - product, engineering, and growth.",
     },
     {
       company: "Stripe",
@@ -193,7 +193,7 @@ export const DATA = {
     {
       school: "Founder Fellowship SF",
       href: "https://foundersfellowship.io",
-      degree: "Cohort 4 — Founder in Residence",
+      degree: "Cohort 4 - Founder in Residence",
       logoUrl: "https://avatar.vercel.sh/founder-fellowship?size=40",
       start: "2023",
       end: "2023",
@@ -287,7 +287,7 @@ export const DATA = {
       dates: "June 2023 - September 2023",
       active: true,
       description:
-        "A headless form backend that handles submissions, spam filtering, file uploads, and email notifications — no server required. Drop in one script tag and you're done.",
+        "A headless form backend that handles submissions, spam filtering, file uploads, and email notifications - no server required. Drop in one script tag and you're done.",
       technologies: [
         "Astro",
         "TypeScript",
