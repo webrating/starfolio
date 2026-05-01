@@ -1,7 +1,7 @@
 {
-  "name": "astrofolio",
+  "name": "starfolio",
   "type": "module",
-  "description": "Astrofolio - Create a personal or professional portfolio site just from a single config file. Built with Astro.",
+  "description": "Starfolio - Create a personal or professional portfolio site just from a single config file. Built with Astro.",
   "author": "websiterating",
   "version": "0.0.1",
   "engines": {

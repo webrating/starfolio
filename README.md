@@ -1,6 +1,6 @@
 <div align="center">
 
-# Astrofolio
+# Starfolio
 
 **A modern, minimal Astro portfolio template** - built with Astro v6, React, Tailwind CSS v4, shadcn/ui, and MDX. Edit three files, deploy anywhere.
 
@@ -8,15 +8,15 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000000?logo=shadcnui&logoColor=white)](https://ui.shadcn.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/webrating/astrofolio)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/webrating/starfolio)
 
-[**Live Demo**](https://websiterating.com/astro-portfolio-template/) · [Report Bug](https://github.com/webrating/astrofolio/issues) · [Request Feature](https://github.com/webrating/astrofolio/issues)
+[**Live Demo**](https://websiterating.com/astro-portfolio-template/) · [Report Bug](https://github.com/webrating/starfolio/issues) · [Request Feature](https://github.com/webrating/starfolio/issues)
 
-![Astrofolio preview](./public/astrofolio-preview.png)
+![Starfolio preview](./public/starfolio-preview.png)
 
 </div>
 
-## Why Astrofolio?
+## Why Starfolio?
 
 A developer portfolio template that doesn't make you hunt through twenty component files to change your name. Your entire portfolio - bio, work history, projects, skills, hackathons, social links - lives in a single typed data file. The components read from it. You never touch them.
 
@@ -58,8 +58,8 @@ A developer portfolio template that doesn't make you hunt through twenty compone
 **Prerequisites:** Node.js >= 22.12.0, pnpm
 
 ```bash
-git clone https://github.com/webrating/astrofolio
-cd astrofolio
+git clone https://github.com/webrating/starfolio
+cd starfolio
 pnpm install
 pnpm dev
 ```
@@ -172,7 +172,7 @@ Pre-configured for **Cloudflare Workers or Pages** via `@astrojs/cloudflare`. Ru
 
 To use a different host, swap the adapter in `astro.config.mjs` - see [Astro adapters](https://docs.astro.build/en/guides/deploy/).
 
-Astrofolio works with any Astro-supported deploy target: **Vercel**, **Netlify**, **Cloudflare Pages**, **GitHub Pages**, **Node**, or static hosting.
+Starfolio works with any Astro-supported deploy target: **Vercel**, **Netlify**, **Cloudflare Pages**, **GitHub Pages**, **Node**, or static hosting.
 
 ## Project structure
 
@@ -195,7 +195,7 @@ public/               # Static assets (images, favicon)
 
 ## Contributing
 
-Issues and PRs welcome. If you build something with Astrofolio, open an issue with a link - happy to feature it in a "Built with Astrofolio" section.
+Issues and PRs welcome. If you build something with Starfolio, open an issue with a link - happy to feature it in a "Built with Starfolio" section.
 
 ## Show your support
 
