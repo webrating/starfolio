@@ -1,0 +1,39 @@
+name: Deploy to GitHub Pages
+
+on:
+  # Activa el flujo de trabajo cada vez que hagas push a la rama `main`
+  # Usando un nombre de rama diferente? Reemplaza `main` con el nombre de tu rama
+  push:
+    branches: [ main ]
+  # Te permite ejecutar este flujo de trabajo manualmente desde la pestaña Acciones en GitHub.
+  workflow_dispatch:
+
+# Permite que este trabajo clone el repositorio y cree un despliegue de página
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v5
+      - name: Install, build, and upload your site
+        uses: withastro/action@v5
+        with:
+          node-version: 24
+          package-manager: pnpm@latest
+          build-cmd: pnpm run build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
