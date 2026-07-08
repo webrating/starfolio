@@ -20,14 +20,14 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v5
-      - name: Approve pnpm builds
-        run: pnpm approve-builds
       - name: Install, build, and upload your site
         uses: withastro/action@v5
         with:
           node-version: 24
           package-manager: pnpm@latest
           build-cmd: pnpm run build
+      - name: Approve pnpm builds
+        run: pnpm approve-builds
 
   deploy:
     needs: build
